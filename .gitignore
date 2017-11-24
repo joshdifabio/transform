@@ -1,0 +1,4 @@
+/vendor
+/composer.lock
+.idea
+/akeneo-magento2-integration

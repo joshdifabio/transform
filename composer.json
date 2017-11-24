@@ -1,0 +1,17 @@
+{
+    "name": "joshdifabio/transform",
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Josh\\Functional\\": "src"
+        },
+        "files": ["src/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Josh\\Functional\\Test\\": "tests"
+        }
+    }
+}
