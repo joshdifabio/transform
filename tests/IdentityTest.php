@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Identity;
+use Joshdifabio\Transform\Identity;
 use PHPUnit\Framework\TestCase;
 
 class IdentityTest extends TestCase

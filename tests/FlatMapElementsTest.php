@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\FlatMapElements;
+use Joshdifabio\Transform\FlatMapElements;
 
 class FlatMapElementsTest extends TransformTest
 {

@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
-trait SingularTransformTrait
+trait FluentTransformTrait
 {
     public function then(Transform $transform): Transform
     {

@@ -1,5 +1,5 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
 use PHPUnit\Framework\TestCase;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Kv;
-use Josh\Functional\Transform;
+use Joshdifabio\Transform\Kv;
+use Joshdifabio\Transform\Transform;
 use PHPUnit\Framework\TestCase;
 
 abstract class TransformTest extends TestCase

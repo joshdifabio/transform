@@ -1,14 +1,14 @@
 <?php
-namespace Josh\Functional\Internal;
+namespace Joshdifabio\Transform\Internal;
 
-use function Josh\Functional\assertIterable;
-use Josh\Functional\Kv;
-use Josh\Functional\SingularTransformTrait;
-use Josh\Functional\Transform;
+use function Joshdifabio\Transform\assertIterable;
+use Joshdifabio\Transform\Kv;
+use Joshdifabio\Transform\FluentTransformTrait;
+use Joshdifabio\Transform\Transform;
 
 final class WithKeysOfInputIterable implements Transform
 {
-    use SingularTransformTrait;
+    use FluentTransformTrait;
 
     public function applyTo($input): \Iterator
     {

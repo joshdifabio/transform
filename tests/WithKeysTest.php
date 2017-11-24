@@ -1,8 +1,8 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Kv;
-use Josh\Functional\WithKeys;
+use Joshdifabio\Transform\Kv;
+use Joshdifabio\Transform\WithKeys;
 
 class WithKeysTest extends TransformTest
 {

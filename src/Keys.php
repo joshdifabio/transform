@@ -1,10 +1,10 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 class Keys
 {
     public static function create(): Transform
     {
-        return MapElements::viaMethod('getKey');
+        return MapElements::via(Kv::key());
     }
 }

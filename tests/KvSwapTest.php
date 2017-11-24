@@ -1,8 +1,8 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Kv;
-use Josh\Functional\KvSwap;
+use Joshdifabio\Transform\Kv;
+use Joshdifabio\Transform\KvSwap;
 
 class KvSwapTest extends TransformTest
 {

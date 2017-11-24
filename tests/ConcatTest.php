@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Concat;
+use Joshdifabio\Transform\Concat;
 
 class ConcatTest extends TransformTest
 {

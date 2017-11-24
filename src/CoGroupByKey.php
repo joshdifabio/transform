@@ -1,5 +1,5 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 class CoGroupByKey
 {
@@ -23,7 +23,7 @@ class CoGroupByKey
     private static function createCoGbkResult(): Transform
     {
         return GroupByKey::create()->then(new class implements Transform {
-            use SingularTransformTrait;
+            use FluentTransformTrait;
 
             public function applyTo($input): \Iterator
             {

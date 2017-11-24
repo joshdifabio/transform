@@ -1,5 +1,5 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 final class Kv
 {
@@ -10,7 +10,7 @@ final class Kv
         $kv->value = $value;
         return $kv;
     }
-    
+
     public static function key(): callable
     {
         return function (Kv $kv) {
@@ -36,6 +36,13 @@ final class Kv
     {
         return function (Kv $kv) use ($fn) {
             return $fn($kv->getValue());
+        };
+    }
+
+    public static function unpack(callable $fn): callable
+    {
+        return function (Kv $kv) use ($fn) {
+            return $fn($kv->getKey(), $kv->getValue());
         };
     }
 

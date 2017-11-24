@@ -5,13 +5,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Josh\\Functional\\": "src"
+            "Joshdifabio\\Transform\\": "src"
         },
         "files": ["src/functions.php"]
     },
     "autoload-dev": {
         "psr-4": {
-            "Josh\\Functional\\Test\\": "tests"
+            "Joshdifabio\\Transform\\Test\\": "tests"
         }
     }
 }

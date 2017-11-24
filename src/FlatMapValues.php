@@ -1,5 +1,5 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 final class FlatMapValues
 {

@@ -1,9 +1,9 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 final class Identity implements Transform
 {
-    use SingularTransformTrait;
+    use FluentTransformTrait;
 
     public static function get(): Transform
     {

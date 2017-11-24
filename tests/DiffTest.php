@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Diff;
+use Joshdifabio\Transform\Diff;
 
 class DiffTest extends TransformTest
 {

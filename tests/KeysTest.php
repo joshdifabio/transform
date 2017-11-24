@@ -1,8 +1,8 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Kv;
-use Josh\Functional\Keys;
+use Joshdifabio\Transform\Kv;
+use Joshdifabio\Transform\Keys;
 
 class KeysTest extends TransformTest
 {
@@ -14,6 +14,6 @@ class KeysTest extends TransformTest
     public function getTestDataForApplyTo()
     {
         yield [Keys::create(), [Kv::of('foo', 'bar'), Kv::of('hello', 'world')], ['foo', 'hello']];
-        yield [Keys::create(), ['foo'], ExpectError::ofType(\Error::class)];
+        yield [Keys::create(), ['foo'], ExpectError::ofType(\TypeError::class)];
     }
 }

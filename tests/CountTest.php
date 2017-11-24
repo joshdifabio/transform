@@ -1,8 +1,8 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Count;
-use Josh\Functional\Kv;
+use Joshdifabio\Transform\Count;
+use Joshdifabio\Transform\Kv;
 
 class CountTest extends TransformTest
 {

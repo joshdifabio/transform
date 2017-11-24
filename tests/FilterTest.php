@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Filter;
+use Joshdifabio\Transform\Filter;
 
 class FilterTest extends TransformTest
 {

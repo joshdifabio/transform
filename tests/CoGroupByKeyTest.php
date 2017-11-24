@@ -1,10 +1,10 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\CoGbkResult;
-use Josh\Functional\CoGroupByKey;
-use Josh\Functional\Kv;
-use Josh\Functional\MapValues;
+use Joshdifabio\Transform\CoGbkResult;
+use Joshdifabio\Transform\CoGroupByKey;
+use Joshdifabio\Transform\Kv;
+use Joshdifabio\Transform\MapValues;
 
 class CoGroupByKeyTest extends TransformTest
 {

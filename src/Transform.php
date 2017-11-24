@@ -1,5 +1,5 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 interface Transform
 {

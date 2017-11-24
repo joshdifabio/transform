@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\MapElements;
+use Joshdifabio\Transform\MapElements;
 
 class MapElementsTest extends TransformTest
 {

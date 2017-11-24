@@ -1,5 +1,5 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 final class Pipeline implements Transform
 {
@@ -11,15 +11,11 @@ final class Pipeline implements Transform
         if (empty($transforms)) {
             return Identity::get();
         }
-        $firstTransform = \array_shift($transforms);
-        if (empty($transforms)) {
-            return $firstTransform;
+        if (\count($transforms) == 1) {
+            return \array_shift($transforms);
         }
         $pipeline = new self;
-        $pipeline->members = [$firstTransform];
-        foreach ($transforms as $transform) {
-            $pipeline = $pipeline->then($transform);
-        }
+        $pipeline->members = $transforms;
         return $pipeline;
     }
 

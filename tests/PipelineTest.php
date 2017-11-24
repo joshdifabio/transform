@@ -1,12 +1,12 @@
 <?php
-namespace Josh\Functional\Test;
+namespace Joshdifabio\Transform\Test;
 
-use Josh\Functional\Pipeline;
-use Josh\Functional\Filter;
-use Josh\Functional\Identity;
-use Josh\Functional\Kv;
-use Josh\Functional\Values;
-use Josh\Functional\WithKeys;
+use Joshdifabio\Transform\Pipeline;
+use Joshdifabio\Transform\Filter;
+use Joshdifabio\Transform\Identity;
+use Joshdifabio\Transform\Kv;
+use Joshdifabio\Transform\Values;
+use Joshdifabio\Transform\WithKeys;
 
 class PipelineTest extends TransformTest
 {

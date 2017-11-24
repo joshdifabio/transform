@@ -1,9 +1,9 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
 class Diff implements Transform
 {
-    use SingularTransformTrait;
+    use FluentTransformTrait;
 
     public static function create(): Transform
     {

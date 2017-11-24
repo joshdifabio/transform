@@ -1,7 +1,7 @@
 <?php
-namespace Josh\Functional;
+namespace Joshdifabio\Transform;
 
-use Josh\Functional\Internal\WithKeysOfInputIterable;
+use Joshdifabio\Transform\Internal\WithKeysOfInputIterable;
 
 class WithKeys
 {
@@ -10,6 +10,13 @@ class WithKeys
         return MapElements::via(function ($value) use ($fn) {
             $key = $fn($value);
             return Kv::of($key, $value);
+        });
+    }
+
+    public static function ofInputElement(): Transform
+    {
+        return MapElements::via(function ($value) {
+            return Kv::of($value, $value);
         });
     }
 
