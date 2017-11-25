@@ -7,11 +7,7 @@ function assertIterable($value) {
     }
 }
 
-function identity($arg) {
-    return $arg;
-}
-
-function identityFn(): callable {
+function identity(): callable {
     return function ($arg) {
         return $arg;
     };
