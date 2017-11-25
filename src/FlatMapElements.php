@@ -12,11 +12,6 @@ final class FlatMapElements implements Transform
         return $transform;
     }
 
-    public static function viaTransform(Transform $transform): Transform
-    {
-        return FlatMapElements::via([$transform, 'applyTo']);
-    }
-
     public function applyTo($input): \Iterator
     {
         assertIterable($input);

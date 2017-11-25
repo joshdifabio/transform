@@ -11,9 +11,4 @@ final class FlatMapValues
             }
         });
     }
-
-    public static function viaTransform(Transform $transform): Transform
-    {
-        return FlatMapValues::via([$transform, 'applyTo']);
-    }
 }
