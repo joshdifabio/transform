@@ -10,3 +10,9 @@ function assertIterable($value) {
 function identity($arg) {
     return $arg;
 }
+
+function identityFn(): callable {
+    return function ($arg) {
+        return $arg;
+    };
+}
