@@ -13,13 +13,6 @@ class WithKeys
         });
     }
 
-    public static function ofInputElement(): Transform
-    {
-        return MapElements::via(function ($value) {
-            return Kv::of($value, $value);
-        });
-    }
-
     public static function ofInputIterable(): Transform
     {
         return new WithKeysOfInputIterable;
