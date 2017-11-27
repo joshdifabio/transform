@@ -42,6 +42,12 @@ class DiffTest extends TransformTest
 
         yield [
             Diff::create(),
+            [[], [1, 2]],
+            []
+        ];
+
+        yield [
+            Diff::create(),
             [],
             []
         ];
