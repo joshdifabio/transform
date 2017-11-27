@@ -1,82 +1,75 @@
 <?php
 namespace Joshdifabio\Transform;
 
-final class Filter implements Transform
+final class Filter
 {
-    use FluentTransformTrait;
-
-    public static function by(callable $predicate): self
+    public static function by(callable $predicate): Transform
     {
-        $transform = new self;
-        $transform->fn = $predicate;
-        return $transform;
+        return FlatMapElements::via(function ($element) use ($predicate) {
+            if ($predicate($element)) {
+                yield $element;
+            }
+        });
     }
 
-    public static function equalTo($value): self
+    public static function equalTo($value): Transform
     {
         return Filter::by(function ($element) use ($value) {
             return $element === $value;
         });
     }
 
-    public static function notEqualTo($value): self
+    public static function notEqualTo($value): Transform
     {
         return Filter::by(function ($element) use ($value) {
             return $element !== $value;
         });
     }
 
-    public static function byKey(callable $predicate): self
+    public static function byKey(callable $predicate): Transform
     {
         return Filter::by(function (Kv $element) use ($predicate) {
             return $predicate($element->getKey());
         });
     }
 
-    public static function keyEqualTo($value): self
+    public static function keyEqualTo($value): Transform
     {
         return Filter::by(function (Kv $element) use ($value) {
             return $element->getKey() === $value;
         });
     }
 
-    public static function keyNotEqualTo($value): self
+    public static function keyNotEqualTo($value): Transform
     {
         return Filter::by(function (Kv $element) use ($value) {
             return $element->getKey() !== $value;
         });
     }
 
-    public static function byValue(callable $predicate): self
+    public static function byValue(callable $predicate): Transform
     {
         return Filter::by(function (Kv $element) use ($predicate) {
             return $predicate($element->getValue());
         });
     }
 
-    public static function valueEqualTo($value): self
+    public static function valueEqualTo($value): Transform
     {
         return Filter::by(function (Kv $element) use ($value) {
             return $element->getValue() === $value;
         });
     }
 
-    public static function valueNotEqualTo($value): self
+    public static function valueNotEqualTo($value): Transform
     {
         return Filter::by(function (Kv $element) use ($value) {
             return $element->getValue() !== $value;
         });
     }
 
-    public function applyTo($input): \Iterator
+    private function __construct()
     {
-        assertIterable($input);
-        foreach ($input as $element) {
-            if (($this->fn)($element)) {
-                yield $element;
-            }
-        }
-    }
 
-    private $fn;
+    }
 }
