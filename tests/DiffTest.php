@@ -45,5 +45,23 @@ class DiffTest extends TransformTest
             [],
             []
         ];
+
+        $gen = function ($step) {
+            for ($i = 0; $i < 5 * $step; $i += $step) {
+                yield $i;
+            }
+        };
+
+        yield [
+            Diff::create(),
+            [$gen(2), $gen(1)],
+            [6, 8],
+        ];
+
+        yield [
+            Diff::create(),
+            [$gen(2)],
+            \range(0, 8, 2),
+        ];
     }
 }

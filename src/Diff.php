@@ -29,11 +29,9 @@ final class Diff implements Transform
         }
 
         $sizeOfInput = \count($input);
-        switch ($sizeOfInput) {
-            case 0:
-                return new \EmptyIterator;
-            case 1:
-                return new \ArrayIterator($input[0]);
+
+        if ($sizeOfInput == 0) {
+            return new \EmptyIterator;
         }
 
         return WithKeys::ofInputIterable()
