@@ -3,7 +3,7 @@ namespace Joshdifabio\Transform;
 
 use Joshdifabio\Transform\Internal\WithKeysOfInputIterable;
 
-class WithKeys
+final class WithKeys
 {
     public static function of(callable $fn): Transform
     {

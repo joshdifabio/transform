@@ -1,7 +1,7 @@
 <?php
 namespace Joshdifabio\Transform;
 
-class Keys
+final class Keys
 {
     public static function create(): Transform
     {

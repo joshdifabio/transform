@@ -1,7 +1,7 @@
 <?php
 namespace Joshdifabio\Transform;
 
-class CoGroupByKey
+final class CoGroupByKey
 {
     public static function create(): Transform
     {

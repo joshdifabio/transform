@@ -1,7 +1,7 @@
 <?php
 namespace Joshdifabio\Transform;
 
-class Diff implements Transform
+final class Diff implements Transform
 {
     use FluentTransformTrait;
 

@@ -1,7 +1,7 @@
 <?php
 namespace Joshdifabio\Transform;
 
-class Values
+final class Values
 {
     public static function get(): Transform
     {

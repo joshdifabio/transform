@@ -1,7 +1,7 @@
 <?php
 namespace Joshdifabio\Transform;
 
-class CoGbkResult
+final class CoGbkResult
 {
     public static function empty(): self
     {

@@ -1,7 +1,7 @@
 <?php
 namespace Joshdifabio\Transform;
 
-class KvSwap
+final class KvSwap
 {
     public static function create(): Transform
     {
