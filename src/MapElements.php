@@ -3,8 +3,6 @@ namespace Joshdifabio\Transform;
 
 final class MapElements
 {
-    use FluentTransformTrait;
-
     public static function via(callable $fn): Transform
     {
         return FlatMapElements::via(function ($element) use ($fn) {
