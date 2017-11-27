@@ -5,8 +5,8 @@ final class MapValues
 {
     public static function via(callable $fn): Transform
     {
-        return MapElements::via(function (Kv $element) use ($fn) {
-            return Kv::of($element->getKey(), $fn($element->getValue()));
+        return FlatMapElements::via(function (Kv $element) use ($fn) {
+            yield Kv::of($element->getKey(), $fn($element->getValue()));
         });
     }
 }
