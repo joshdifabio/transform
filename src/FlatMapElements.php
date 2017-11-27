@@ -24,5 +24,10 @@ final class FlatMapElements implements Transform
         }
     }
 
+    public function getFn(): callable
+    {
+        return $this->fn;
+    }
+
     private $fn;
 }
