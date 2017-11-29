@@ -20,8 +20,8 @@ class FilterTest extends TransformTest
 
         yield [
             Filter::equalTo(3),
-            [1, null, 2, 3, null, null, 4, 5, 6, null],
-            [3],
+            [1, null, 2, 3, null, null, 4, 5, 6, null, 3],
+            [3, 3],
         ];
 
         yield [
