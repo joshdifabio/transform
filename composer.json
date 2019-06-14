@@ -5,13 +5,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Joshdifabio\\Transform\\": "src"
+            "SnowIO\\Transform\\": "src"
         },
         "files": ["src/functions.php"]
     },
     "autoload-dev": {
         "psr-4": {
-            "Joshdifabio\\Transform\\Test\\": "tests"
+            "SnowIO\\Transform\\Test\\": "tests"
         }
     }
 }

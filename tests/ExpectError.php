@@ -1,5 +1,5 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
 use PHPUnit\Framework\TestCase;
 

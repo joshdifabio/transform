@@ -1,10 +1,10 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\CoGbkResult;
-use Joshdifabio\Transform\CoGroupByKey;
-use Joshdifabio\Transform\Kv;
-use Joshdifabio\Transform\MapValues;
+use SnowIO\Transform\CoGbkResult;
+use SnowIO\Transform\CoGroupByKey;
+use SnowIO\Transform\Kv;
+use SnowIO\Transform\MapValues;
 
 class CoGroupByKeyTest extends TransformTest
 {

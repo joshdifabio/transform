@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Diff;
+use SnowIO\Transform\Diff;
 
 class DiffTest extends TransformTest
 {

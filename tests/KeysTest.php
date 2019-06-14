@@ -1,8 +1,8 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Kv;
-use Joshdifabio\Transform\Keys;
+use SnowIO\Transform\Kv;
+use SnowIO\Transform\Keys;
 
 class KeysTest extends TransformTest
 {

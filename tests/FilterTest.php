@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Filter;
+use SnowIO\Transform\Filter;
 
 class FilterTest extends TransformTest
 {

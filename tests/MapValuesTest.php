@@ -1,8 +1,8 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Kv;
-use Joshdifabio\Transform\MapValues;
+use SnowIO\Transform\Kv;
+use SnowIO\Transform\MapValues;
 
 class MapValuesTest extends TransformTest
 {

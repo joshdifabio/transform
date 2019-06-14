@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Concat;
+use SnowIO\Transform\Concat;
 
 class ConcatTest extends TransformTest
 {

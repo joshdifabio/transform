@@ -1,8 +1,8 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Count;
-use Joshdifabio\Transform\Kv;
+use SnowIO\Transform\Count;
+use SnowIO\Transform\Kv;
 
 class CountTest extends TransformTest
 {

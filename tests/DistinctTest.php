@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Distinct;
+use SnowIO\Transform\Distinct;
 
 class DistinctTest extends TransformTest
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Joshdifabio\Transform;
+namespace SnowIO\Transform;
 
 interface Transform
 {

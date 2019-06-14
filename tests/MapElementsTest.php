@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\MapElements;
+use SnowIO\Transform\MapElements;
 
 class MapElementsTest extends TransformTest
 {

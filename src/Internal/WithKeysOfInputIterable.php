@@ -1,10 +1,10 @@
 <?php
-namespace Joshdifabio\Transform\Internal;
+namespace SnowIO\Transform\Internal;
 
-use function Joshdifabio\Transform\assertIterable;
-use Joshdifabio\Transform\Kv;
-use Joshdifabio\Transform\FluentTransformTrait;
-use Joshdifabio\Transform\Transform;
+use function SnowIO\Transform\assertIterable;
+use SnowIO\Transform\Kv;
+use SnowIO\Transform\FluentTransformTrait;
+use SnowIO\Transform\Transform;
 
 final class WithKeysOfInputIterable implements Transform
 {

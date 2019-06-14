@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform;
+namespace SnowIO\Transform;
 
-use Joshdifabio\Transform\Internal\WithKeysOfInputIterable;
+use SnowIO\Transform\Internal\WithKeysOfInputIterable;
 
 final class WithKeys
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Joshdifabio\Transform;
+namespace SnowIO\Transform;
 
 function assertIterable($value) {
     if (!\is_iterable($value)) {

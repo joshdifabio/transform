@@ -1,12 +1,12 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Pipeline;
-use Joshdifabio\Transform\Filter;
-use Joshdifabio\Transform\Identity;
-use Joshdifabio\Transform\Kv;
-use Joshdifabio\Transform\Values;
-use Joshdifabio\Transform\WithKeys;
+use SnowIO\Transform\Pipeline;
+use SnowIO\Transform\Filter;
+use SnowIO\Transform\Identity;
+use SnowIO\Transform\Kv;
+use SnowIO\Transform\Values;
+use SnowIO\Transform\WithKeys;
 
 class PipelineTest extends TransformTest
 {

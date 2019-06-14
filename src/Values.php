@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform;
+namespace SnowIO\Transform;
 
-use Joshdifabio\Transform\Internal\ValuesWithKeysAppliedToIterator;
+use SnowIO\Transform\Internal\ValuesWithKeysAppliedToIterator;
 
 final class Values
 {

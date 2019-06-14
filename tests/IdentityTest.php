@@ -1,7 +1,7 @@
 <?php
-namespace Joshdifabio\Transform\Test;
+namespace SnowIO\Transform\Test;
 
-use Joshdifabio\Transform\Identity;
+use SnowIO\Transform\Identity;
 use PHPUnit\Framework\TestCase;
 
 class IdentityTest extends TestCase
