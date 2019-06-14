@@ -1,7 +1,7 @@
 <?php
 namespace SnowIO\Transform\Test;
 
-use JoshDiFabio\Transform\Kv;
+use SnowIO\Transform\Kv;
 use SnowIO\Transform\Values;
 
 class ValuesTest extends TransformTest
